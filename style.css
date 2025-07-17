@@ -18,7 +18,7 @@ header {
     border-bottom: 1px solid #0ff;
     background: rgba(0, 0, 0, 0.8);
 }
-header input {
+header input, header select {
     margin-top: 10px;
     padding: 8px;
     width: 250px;
@@ -29,8 +29,11 @@ header input {
     text-align: center;
     background: rgba(0,255,255,0.1);
     color: #0ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-header input:focus {
+header input:focus, header select:focus {
     box-shadow: 0 0 10px #0ff;
 }
 .container {
