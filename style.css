@@ -55,6 +55,19 @@ header input:focus, header select:focus {
     transform: scale(1.05);
     box-shadow: 0 0 15px #0ff;
 }
+.ai-btn {
+    background: #0ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.ai-btn:hover {
+    background: #ff0;
+}
 a {
     color: #ff0;
     text-decoration: none;

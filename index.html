@@ -54,8 +54,17 @@
                                       <p>Rank: #${wp.marketcapRank}</p>
                                       <p>Kategori: ${wp.category}</p>
                                       <p>${wp.summary}</p>
-                                      <a href="${wp.link}" target="_blank">📄 Whitepaper</a>`;
+                                      <a href="${wp.link}" target="_blank">📄 Whitepaper</a>
+                                      <button class="ai-btn">🤖 AI Özetini Oku</button>
+                                      <p class="ai-summary" style="display:none; color:#0f0; margin-top:5px;">(AI): ${wp.aiSummary}</p>`;
                     container.appendChild(card);
+                });
+
+                document.querySelectorAll('.ai-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const summary = btn.nextElementSibling;
+                        summary.style.display = summary.style.display === "none" ? "block" : "none";
+                    });
                 });
             }
 
