@@ -3,20 +3,62 @@
         {
             "name": "Bitcoin",
             "symbol": "BTC",
-            "summary": "Merkeziyetsiz dijital para. Satoshi Nakamoto taraf\u0131ndan 2008'de tasarland\u0131.",
+            "summary": "Merkeziyetsiz dijital para. Blockchain devrimini ba\u015flatt\u0131.",
             "link": "https://bitcoin.org/bitcoin.pdf"
         },
         {
             "name": "Ethereum",
             "symbol": "ETH",
-            "summary": "Ak\u0131ll\u0131 s\u00f6zle\u015fmelerin anas\u0131. DeFi ve NFT ekosisteminin temelini att\u0131.",
+            "summary": "Ak\u0131ll\u0131 s\u00f6zle\u015fmeler ve DeFi ekosisteminin temeli.",
             "link": "https://ethereum.org/en/whitepaper/"
         },
         {
             "name": "Binance Coin",
             "symbol": "BNB",
-            "summary": "Binance ekosisteminin yerel tokeni. \u0130\u015flem \u00fccretlerinde indirim sa\u011flar.",
+            "summary": "Binance ekosisteminin yerel tokeni, i\u015flem \u00fccretlerinde indirim.",
             "link": "https://www.binance.com/resources/ico/whitepaper/binance-whitepaper-en.pdf"
+        },
+        {
+            "name": "Solana",
+            "symbol": "SOL",
+            "summary": "Y\u00fcksek h\u0131zl\u0131 ve d\u00fc\u015f\u00fck \u00fccretli Layer-1 blok zinciri.",
+            "link": "https://solana.com/solana-whitepaper.pdf"
+        },
+        {
+            "name": "XRP",
+            "symbol": "XRP",
+            "summary": "Banka transferleri ve s\u0131n\u0131r \u00f6tesi \u00f6demeler i\u00e7in tasarland\u0131.",
+            "link": "https://ripple.com/files/ripple_consensus_whitepaper.pdf"
+        },
+        {
+            "name": "Cardano",
+            "symbol": "ADA",
+            "summary": "Bilimsel ara\u015ft\u0131rmaya dayal\u0131 PoS blok zinciri.",
+            "link": "https://docs.cardano.org/en/latest/explore-cardano/cardano-whitepaper.html"
+        },
+        {
+            "name": "Dogecoin",
+            "symbol": "DOGE",
+            "summary": "Meme coin olarak ba\u015flad\u0131, topluluk deste\u011fiyle b\u00fcy\u00fcd\u00fc.",
+            "link": "https://dogecoin.com/whitepaper.pdf"
+        },
+        {
+            "name": "Polkadot",
+            "symbol": "DOT",
+            "summary": "Blok zincirleri aras\u0131nda veri ve de\u011fer transferini m\u00fcmk\u00fcn k\u0131lar.",
+            "link": "https://polkadot.network/PolkaDotPaper.pdf"
+        },
+        {
+            "name": "Avalanche",
+            "symbol": "AVAX",
+            "summary": "Y\u00fcksek i\u015flem kapasitesi ve d\u00fc\u015f\u00fck gecikme s\u00fcresiyle Layer-1.",
+            "link": "https://assets.avax.network/whitepaper.pdf"
+        },
+        {
+            "name": "Chainlink",
+            "symbol": "LINK",
+            "summary": "Ak\u0131ll\u0131 s\u00f6zle\u015fmelere ger\u00e7ek d\u00fcnya verisi sa\u011flar.",
+            "link": "https://research.chain.link/whitepaper-v2.pdf"
         }
     ]
 }

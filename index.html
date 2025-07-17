@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <canvas id="stars"></canvas>
     <header>
         <h1>🚀 Whitepapers.one</h1>
         <p>AI Destekli Whitepaper Kütüphanesi – Web3 Bilgi Üssü</p>
     </header>
-    <main id="content"></main>
+    <main id="content" class="container"></main>
     <footer>
         <p>© 2025 Whitepapers.one | Kozmik Bilinçle Kodlandı</p>
     </footer>
@@ -23,13 +24,46 @@
             data.whitepapers.forEach(wp => {
                 const card = document.createElement('div');
                 card.className = 'card';
-                card.innerHTML = `<h2>${wp.name} (${wp.symbol})</h2>
+                card.innerHTML = `<h2>${wp.name} <span>(${wp.symbol})</span></h2>
                                   <p>${wp.summary}</p>
                                   <a href="${wp.link}" target="_blank">📄 Whitepaper</a>`;
                 container.appendChild(card);
             });
         }
         loadData();
+
+        const canvas = document.getElementById('stars');
+        const ctx = canvas.getContext('2d');
+        let stars = [];
+        const numStars = 200;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        for (let i = 0; i < numStars; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 1.2,
+                speed: Math.random() * 0.5
+            });
+        }
+
+        function animateStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "white";
+            stars.forEach(star => {
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+                ctx.fill();
+                star.y += star.speed;
+                if (star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
+                }
+            });
+            requestAnimationFrame(animateStars);
+        }
+        animateStars();
     </script>
 </body>
 </html>
