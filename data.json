@@ -1,0 +1,22 @@
+{
+    "whitepapers": [
+        {
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "summary": "Merkeziyetsiz dijital para. Satoshi Nakamoto taraf\u0131ndan 2008'de tasarland\u0131.",
+            "link": "https://bitcoin.org/bitcoin.pdf"
+        },
+        {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "summary": "Ak\u0131ll\u0131 s\u00f6zle\u015fmelerin anas\u0131. DeFi ve NFT ekosisteminin temelini att\u0131.",
+            "link": "https://ethereum.org/en/whitepaper/"
+        },
+        {
+            "name": "Binance Coin",
+            "symbol": "BNB",
+            "summary": "Binance ekosisteminin yerel tokeni. \u0130\u015flem \u00fccretlerinde indirim sa\u011flar.",
+            "link": "https://www.binance.com/resources/ico/whitepaper/binance-whitepaper-en.pdf"
+        }
+    ]
+}
