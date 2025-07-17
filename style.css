@@ -18,6 +18,21 @@ header {
     border-bottom: 1px solid #0ff;
     background: rgba(0, 0, 0, 0.8);
 }
+header input {
+    margin-top: 10px;
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(0,255,255,0.1);
+    color: #0ff;
+}
+header input:focus {
+    box-shadow: 0 0 10px #0ff;
+}
 .container {
     display: flex;
     flex-wrap: wrap;

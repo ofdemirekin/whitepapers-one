@@ -11,6 +11,7 @@
     <header>
         <h1>🚀 Whitepapers.one</h1>
         <p>AI Destekli Whitepaper Kütüphanesi – Web3 Bilgi Üssü</p>
+        <input type="text" id="search" placeholder="Coin ara (BTC, ETH, BNB...)">
     </header>
     <main id="content" class="container"></main>
     <footer>
@@ -21,13 +22,24 @@
             const res = await fetch('data.json');
             const data = await res.json();
             const container = document.getElementById('content');
-            data.whitepapers.forEach(wp => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.innerHTML = `<h2>${wp.name} <span>(${wp.symbol})</span></h2>
-                                  <p>${wp.summary}</p>
-                                  <a href="${wp.link}" target="_blank">📄 Whitepaper</a>`;
-                container.appendChild(card);
+
+            function renderCards(filter="") {
+                container.innerHTML = "";
+                data.whitepapers
+                    .filter(wp => wp.name.toLowerCase().includes(filter) || wp.symbol.toLowerCase().includes(filter))
+                    .forEach(wp => {
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        card.innerHTML = `<h2>${wp.name} <span>(${wp.symbol})</span></h2>
+                                          <p>${wp.summary}</p>
+                                          <a href="${wp.link}" target="_blank">📄 Whitepaper</a>`;
+                        container.appendChild(card);
+                    });
+            }
+
+            renderCards();
+            document.getElementById('search').addEventListener('input', e => {
+                renderCards(e.target.value.toLowerCase());
             });
         }
         loadData();
