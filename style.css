@@ -88,3 +88,24 @@ header h1, header p {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+header {
+    text-align: left;
+    padding-left: 40px;
+}
+header input, header select {
+    display: inline-block;
+    width: 200px;
+    margin: 5px 10px 5px 0;
+    background: rgba(0,0,0,0.6);
+    color: #0ff;
+    border: 1px solid #0ff;
+}
+header h1, header p {
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-shadow: 0 0 10px #0ff;
+}
+header select:focus, header input:focus {
+    box-shadow: 0 0 10px #ff0;
+}
