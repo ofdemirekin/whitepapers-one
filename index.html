@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitepapers.one – Web3 Bilgi Üssü</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <canvas id="stars"></canvas>
@@ -47,7 +48,7 @@
 
                 coins.sort((a, b) => order === "desc" ? a.marketcapRank - b.marketcapRank : b.marketcapRank - a.marketcapRank);
 
-                coins.forEach(wp => {
+                coins.forEach((wp, i) => {
                     const card = document.createElement('div');
                     card.className = 'card';
                     card.innerHTML = `<h2>${wp.name} <span>(${wp.symbol})</span></h2>
@@ -56,14 +57,37 @@
                                       <p>${wp.summary}</p>
                                       <a href="${wp.link}" target="_blank">📄 Whitepaper</a>
                                       <button class="ai-btn">🤖 AI Özetini Oku</button>
-                                      <p class="ai-summary" style="display:none; color:#0f0; margin-top:5px;">(AI): ${wp.aiSummary}</p>`;
+                                      <p class="ai-summary" style="display:none; color:#0f0; margin-top:5px;">(AI): ${wp.aiSummary}</p>
+                                      <button class="token-btn">📊 Tokenomics</button>
+                                      <canvas id="chart-${i}" style="display:none; max-width:200px; margin:10px auto;"></canvas>`;
                     container.appendChild(card);
-                });
 
-                document.querySelectorAll('.ai-btn').forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        const summary = btn.nextElementSibling;
-                        summary.style.display = summary.style.display === "none" ? "block" : "none";
+                    // AI Buton
+                    const aiBtn = card.querySelector('.ai-btn');
+                    const aiSummary = card.querySelector('.ai-summary');
+                    aiBtn.addEventListener('click', () => {
+                        aiSummary.style.display = aiSummary.style.display === "none" ? "block" : "none";
+                    });
+
+                    // Tokenomics Buton
+                    const tokenBtn = card.querySelector('.token-btn');
+                    const chartCanvas = card.querySelector(`#chart-${i}`);
+                    tokenBtn.addEventListener('click', () => {
+                        if (chartCanvas.style.display === "none") {
+                            chartCanvas.style.display = "block";
+                            new Chart(chartCanvas, {
+                                type: 'pie',
+                                data: {
+                                    labels: wp.tokenomics.labels,
+                                    datasets: [{
+                                        data: wp.tokenomics.values,
+                                        backgroundColor: ['#0ff', '#ff0', '#f0f', '#0f0', '#f90']
+                                    }]
+                                }
+                            });
+                        } else {
+                            chartCanvas.style.display = "none";
+                        }
                     });
                 });
             }

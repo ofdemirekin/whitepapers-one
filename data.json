@@ -7,7 +7,21 @@
             "link": "https://bitcoin.org/bitcoin.pdf",
             "marketcapRank": 1,
             "category": "Layer-1",
-            "aiSummary": "Bitcoin projesi: Merkeziyetsiz dijital para. Blockchain devrimini ba\u015flatt\u0131. (AI sahte \u00f6zet)."
+            "aiSummary": "Bitcoin projesi: Merkeziyetsiz dijital para. Blockchain devrimini ba\u015flatt\u0131. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Ethereum",
@@ -16,7 +30,21 @@
             "link": "https://ethereum.org/en/whitepaper/",
             "marketcapRank": 2,
             "category": "Layer-1",
-            "aiSummary": "Ethereum projesi: Ak\u0131ll\u0131 s\u00f6zle\u015fmeler ve DeFi ekosisteminin temeli. (AI sahte \u00f6zet)."
+            "aiSummary": "Ethereum projesi: Ak\u0131ll\u0131 s\u00f6zle\u015fmeler ve DeFi ekosisteminin temeli. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Binance Coin",
@@ -25,7 +53,21 @@
             "link": "https://www.binance.com/resources/ico/whitepaper/binance-whitepaper-en.pdf",
             "marketcapRank": 3,
             "category": "Exchange",
-            "aiSummary": "Binance Coin projesi: Binance ekosisteminin yerel tokeni, i\u015flem \u00fccretlerinde indirim. (AI sahte \u00f6zet)."
+            "aiSummary": "Binance Coin projesi: Binance ekosisteminin yerel tokeni, i\u015flem \u00fccretlerinde indirim. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Solana",
@@ -34,7 +76,21 @@
             "link": "https://solana.com/solana-whitepaper.pdf",
             "marketcapRank": 5,
             "category": "Layer-1",
-            "aiSummary": "Solana projesi: Y\u00fcksek h\u0131zl\u0131 ve d\u00fc\u015f\u00fck \u00fccretli Layer-1 blok zinciri. (AI sahte \u00f6zet)."
+            "aiSummary": "Solana projesi: Y\u00fcksek h\u0131zl\u0131 ve d\u00fc\u015f\u00fck \u00fccretli Layer-1 blok zinciri. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "XRP",
@@ -43,7 +99,21 @@
             "link": "https://ripple.com/files/ripple_consensus_whitepaper.pdf",
             "marketcapRank": 4,
             "category": "Payments",
-            "aiSummary": "XRP projesi: Banka transferleri ve s\u0131n\u0131r \u00f6tesi \u00f6demeler i\u00e7in tasarland\u0131. (AI sahte \u00f6zet)."
+            "aiSummary": "XRP projesi: Banka transferleri ve s\u0131n\u0131r \u00f6tesi \u00f6demeler i\u00e7in tasarland\u0131. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Cardano",
@@ -52,7 +122,21 @@
             "link": "https://docs.cardano.org/en/latest/explore-cardano/cardano-whitepaper.html",
             "marketcapRank": 7,
             "category": "Layer-1",
-            "aiSummary": "Cardano projesi: Bilimsel ara\u015ft\u0131rmaya dayal\u0131 PoS blok zinciri. (AI sahte \u00f6zet)."
+            "aiSummary": "Cardano projesi: Bilimsel ara\u015ft\u0131rmaya dayal\u0131 PoS blok zinciri. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Dogecoin",
@@ -61,7 +145,21 @@
             "link": "https://dogecoin.com/whitepaper.pdf",
             "marketcapRank": 8,
             "category": "Meme",
-            "aiSummary": "Dogecoin projesi: Meme coin olarak ba\u015flad\u0131, topluluk deste\u011fiyle b\u00fcy\u00fcd\u00fc. (AI sahte \u00f6zet)."
+            "aiSummary": "Dogecoin projesi: Meme coin olarak ba\u015flad\u0131, topluluk deste\u011fiyle b\u00fcy\u00fcd\u00fc. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Polkadot",
@@ -70,7 +168,21 @@
             "link": "https://polkadot.network/PolkaDotPaper.pdf",
             "marketcapRank": 12,
             "category": "Layer-0",
-            "aiSummary": "Polkadot projesi: Blok zincirleri aras\u0131nda veri ve de\u011fer transferini m\u00fcmk\u00fcn k\u0131lar. (AI sahte \u00f6zet)."
+            "aiSummary": "Polkadot projesi: Blok zincirleri aras\u0131nda veri ve de\u011fer transferini m\u00fcmk\u00fcn k\u0131lar. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Avalanche",
@@ -79,7 +191,21 @@
             "link": "https://assets.avax.network/whitepaper.pdf",
             "marketcapRank": 9,
             "category": "Layer-1",
-            "aiSummary": "Avalanche projesi: Y\u00fcksek i\u015flem kapasitesi ve d\u00fc\u015f\u00fck gecikme s\u00fcresiyle Layer-1. (AI sahte \u00f6zet)."
+            "aiSummary": "Avalanche projesi: Y\u00fcksek i\u015flem kapasitesi ve d\u00fc\u015f\u00fck gecikme s\u00fcresiyle Layer-1. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         },
         {
             "name": "Chainlink",
@@ -88,7 +214,21 @@
             "link": "https://research.chain.link/whitepaper-v2.pdf",
             "marketcapRank": 10,
             "category": "Oracle",
-            "aiSummary": "Chainlink projesi: Ak\u0131ll\u0131 s\u00f6zle\u015fmelere ger\u00e7ek d\u00fcnya verisi sa\u011flar. (AI sahte \u00f6zet)."
+            "aiSummary": "Chainlink projesi: Ak\u0131ll\u0131 s\u00f6zle\u015fmelere ger\u00e7ek d\u00fcnya verisi sa\u011flar. (AI sahte \u00f6zet).",
+            "tokenomics": {
+                "labels": [
+                    "Topluluk",
+                    "Ekip",
+                    "Staking",
+                    "Yat\u0131r\u0131mc\u0131lar"
+                ],
+                "values": [
+                    60,
+                    20,
+                    10,
+                    10
+                ]
+            }
         }
     ]
 }
